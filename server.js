@@ -69,6 +69,6 @@ app.get('/bad', (req, res) => {
 	});
 });
 
-app.listen(port, () => {
-	console.log(`Server started listening to http://localhost:${port}`);
+app.listen(process.env.PORT || 3000, () => {
+	console.log(`Server started listening to http://localhost:${process.env.PORT || 3000}`);
 });
